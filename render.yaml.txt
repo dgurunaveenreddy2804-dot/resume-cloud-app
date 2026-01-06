@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: resume-cloud-app
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      apt-get update && apt-get install -y \
+        libpango-1.0-0 \
+        libpangoft2-1.0-0 \
+        fonts-liberation \
+        ttf-dejavu \
+        ttf-liberation \
+        ttf-ubuntu-font-family
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
