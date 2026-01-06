@@ -1,6 +1,9 @@
 fastapi
-uvicorn
-jinja2
+uvicorn[standard]
+python-multipart
+pypdf
+python-docx
 weasyprint
 requests
-python-multipart
+openai
+jinja2
