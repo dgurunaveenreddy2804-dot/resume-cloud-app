@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Builder</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>AI Resume Builder</h1>
+    <form action="/generate" method="post">
+        <h2>Personal Info</h2>
+        <label>Name:</label><br>
+        <input type="text" name="name"><br>
+
+        <label>Email:</label><br>
+        <input type="text" name="email"><br>
+
+        <label>Phone:</label><br>
+        <input type="text" name="phone"><br>
+
+        <label>Location:</label><br>
+        <input type="text" name="location"><br>
+
+        <label>LinkedIn:</label><br>
+        <input type="text" name="linkedin"><br>
+
+        <h2>Summary (raw)</h2>
+        <textarea name="summary_raw" rows="4" cols="60"></textarea><br>
+
+        <h2>Job 1 – Responsibilities (raw)</h2>
+        <textarea name="job1_raw" rows="6" cols="60"></textarea><br>
+
+        <h2>Job 2 – Responsibilities (raw)</h2>
+        <textarea name="job2_raw" rows="6" cols="60"></textarea><br>
+
+        <h2>Skills (comma separated)</h2>
+        <textarea name="skills_raw" rows="3" cols="60"></textarea><br>
+
+        <h2>Education</h2>
+        <textarea name="education" rows="4" cols="60"></textarea><br>
+
+        <button type="submit">Generate Resume PDF</button>
+    </form>
+</body>
+</html>

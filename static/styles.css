@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+h1 {
+    color: #333;
+}
+label {
+    font-weight: bold;
+}
+textarea, input {
+    width: 80%;
+    margin-bottom: 10px;
+}
+button {
+    padding: 8px 16px;
+}
